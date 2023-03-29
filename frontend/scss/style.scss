@@ -148,6 +148,7 @@
   padding: 12px 50px;
   border-radius: 7px;
   transition: 0.5s;
+  text-align: center;
   background: #fff;
   border: 2px solid #00A773;
   -webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.12);
@@ -891,7 +892,121 @@
   }
 }
 
+#login {
+  background-color: #F3F5F7;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  h1.logo {
+    width: 105px;
+    margin: 60px auto 60px;
+  }
+  .container {
+    width: 400px;
+  }
+  .remember {
+    font-size: 14px;
+    p {
+      color: #6D7992;
+      a.forgot-password {
+        color: #00A773;
+      }
+    }
+  }
+  p.no-account {
+    margin: 30px 0 15px;
+    font-size: 14px;
+  }
+  .footer-bottom {
+    font-size: 15px;
+    margin-top: 60px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    p.weup {
+      width: 47px;
+      margin: 0 auto;
+    }
+    &.container {
+      width: 1200px;
+    }
+    ul {
+      li {
+        padding-left: 25px;
+        a {
+          color: #0f232d;
+        }
+      }
+    }
+  }
 
+  .box-login {
+    .title-login {
+      font-size: 26px;
+      font-family: "Montserrat-SemiBold";
+      margin-bottom: 20px;
+    }
+    .btn-get-started {
+      margin-top: 15px;
+    }
+    dl {
+      margin-bottom: 15px;
+      dt {
+        font-size: 14px;
+        font-family: "Montserrat-Medium";
+        margin-bottom: 10px;
+        font-weight: normal;
+      }
+      dd {
+        span.eye {
+          top: 50%;
+          transform: translateY(-50%);
+          right: 10px;
+          width: 15px;
+          cursor: pointer;
+        }
+        input {
+          height: 45px;
+        }
+        input, textarea {
+          border: 2px solid #CED4DA;
+          font-size: 14px;
+          &:focus {
+            border: 2px solid #00A773;
+            outline: none;
+            box-shadow: none;
+          }
+          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #c0c7d6;
+          }
+          &::-moz-placeholder { /* Firefox 19+ */
+            color: #c0c7d6;
+          }
+          &:-ms-input-placeholder { /* IE 10+ */
+            color: #c0c7d6;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #c0c7d6;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Large desktops and laptops */
+@media (max-width: 1199px) {
+  #login {
+    .footer-bottom {
+      &.container {
+        width: auto;
+      }
+    }
+  }
+}
 
 /* Large desktops and laptops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1005,9 +1120,9 @@
       }
     }
   }
-  .btn-get-started-border {
-    font-size: 3.5vw;
-    padding: 2vw 3vw;
+  .btn-get-started-border, .btn-get-started {
+    font-size: 4vw;
+    padding: 3vw 3vw;
   }
   #connect {
     padding: 10vw 0;
@@ -1194,6 +1309,25 @@
       }
     }
   }
+  #login {
+    .footer-bottom {
+      font-size: 3vw;
+      margin-top: 10vw;
+      opacity: 0.8;
+      text-align: center;
+      p.copyright {
+        margin-bottom: 0;
+      }
+      ul {
+        justify-content: center;
+        display: block !important;
+        li {
+          padding-left: 0;
+          margin: 2vw 0;
+        }
+      }
+    }
+  }
   .btn-get-contact {
     padding: 2vw 6vw;
   }
@@ -1234,6 +1368,47 @@
     .box-contact {
       padding: 5vw 6vw;
       border-radius: 2vw;
+      dl {
+        dt {
+          font-size: 3.5vw;
+          margin-bottom: 2vw;
+        }
+        dd {
+          input {
+            height: 11vw;
+          }
+          textarea, input {
+            font-size: 3vw;
+          }
+        }
+      }
+      .title-contact {
+        font-size: 6vw;
+        margin-bottom: 4vw;
+      }
+    }
+  }
+  #login {
+    h1.logo {
+      width: 20%;
+      margin: 10vw auto;
+    }
+    .container{
+      width: auto;
+    }
+    .footer-bottom {
+      position: relative;
+      bottom: auto;
+      p.weup {
+        margin: 4vw auto;
+      }
+    }
+    .box-login {
+      padding: 0vw 3vw;
+      .title-login {
+        font-size: 6vw;
+        margin-bottom: 4vw;
+      }
       dl {
         dt {
           font-size: 3.5vw;
