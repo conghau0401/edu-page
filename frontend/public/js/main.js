@@ -1,3 +1,4 @@
+const BASE_URL = "http://demo01.websitegiatot.vn/"
 $(document).ready(function() {
     //banner section
     const video = $('#player').attr('src');
@@ -46,7 +47,7 @@ $(document).ready(function() {
         nav: true,
         dots: true,
         autoplay: true,
-        navText : ["<img src='../pages/assets/img/home/prev.svg' />","<img src='../pages/assets/img/home/next.svg' />"],
+        navText: [`<img src="${BASE_URL}frontend/pages/assets/img/home/prev.svg" />`, `<img src="${BASE_URL}frontend/pages/assets/img/home/next.svg" />`],
         responsive:{
             0:{
                 loop: true,
@@ -71,7 +72,7 @@ $(document).ready(function() {
         nav: true,
         dots: true,
         autoplay: false,
-        navText : ["<img src='../pages/assets/img/home/prev.svg' />","<img src='../pages/assets/img/home/next.svg' />"],
+        navText: [`<img src="${BASE_URL}frontend/pages/assets/img/home/prev.svg" />`, `<img src="${BASE_URL}frontend/pages/assets/img/home/next.svg" />`],
         responsive:{
             0:{
                 items:1.15,
@@ -95,7 +96,7 @@ $(document).ready(function() {
         nav: true,
         dots: false,
         autoplay: true,
-        navText : ["<img src='../pages/assets/img/home/prev.svg' />","<img src='../pages/assets/img/home/next.svg' />"]
+        navText: [`<img src="${BASE_URL}frontend/pages/assets/img/home/prev.svg" />`, `<img src="${BASE_URL}frontend/pages/assets/img/home/next.svg" />`],
     })
 
     //faq section
@@ -104,7 +105,16 @@ $(document).ready(function() {
         const _parent = $(this).parent("dl");
         _parent.toggleClass("active");
         _parent.children("dd").slideToggle();
+    })
 
+    //Register
+    $(".ar-type").click(function() {
+        $(".ar-type").removeClass("active");
+        $(".ar-type").find("p.des").fadeOut();
+        $(this).addClass("active");
+        $(this).find("p.des").fadeIn();
+        const type = $(this).attr("role");
+        $("input#type-account").val(type);
     })
 
 })

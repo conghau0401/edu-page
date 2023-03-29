@@ -868,6 +868,9 @@
 #login .remember p {
   color: #6D7992;
 }
+#login .remember p label {
+  padding-left: 5px;
+}
 #login .remember p a.forgot-password {
   color: #00A773;
 }
@@ -879,10 +882,13 @@
   font-size: 15px;
   margin-top: 60px;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+#login .footer-bottom p {
+  margin: 0;
 }
 #login .footer-bottom p.weup {
   width: 47px;
@@ -946,6 +952,208 @@
   color: #c0c7d6;
 }
 
+#register h1.logo img {
+  filter: brightness(0) invert(1);
+}
+#register .left-register {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #096958;
+  color: #fff;
+  padding: 5% 3%;
+}
+#register .left-register ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 12px;
+}
+#register .left-register ul li img {
+  width: 25px;
+  margin-right: 10px;
+}
+#register .left-register h1.logo {
+  width: 105px;
+  margin-bottom: 25%;
+}
+#register .left-register h2 {
+  font-size: 36px;
+  font-family: "Montserrat-Bold";
+  margin: 0;
+}
+#register .left-register p.required {
+  font-size: 26px;
+}
+#register .left-register p.des {
+  font-size: 12px;
+  margin: 30px 0;
+}
+#register .right-register {
+  width: 100%;
+  padding: 4% 0 4% 25%;
+}
+#register .right-register .box-register {
+  width: 400px;
+  margin-left: 200px;
+}
+#register .right-register .box-register .type-account {
+  margin-bottom: 100px;
+  position: relative;
+}
+#register .right-register .box-register .type-account .title-type {
+  font-size: 18px;
+  color: #00A773;
+  font-family: "Montserrat-SemiBold";
+}
+#register .right-register .box-register .type-account .ar-type.active p.des {
+  display: block;
+}
+#register .right-register .box-register .type-account .ar-type.active .box-type p.icon-checked {
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1;
+}
+#register .right-register .box-register .type-account .ar-type.active .box-type p.icon-type svg path {
+  fill: #146AF0;
+}
+#register .right-register .box-register .type-account .ar-type.active .box-type p.name {
+  color: #146AF0;
+}
+#register .right-register .box-register .type-account .ar-type:first-child p.des:after, #register .right-register .box-register .type-account .ar-type:first-child p.des:before {
+  left: 15% !important;
+}
+#register .right-register .box-register .type-account .ar-type:last-child p.des:after, #register .right-register .box-register .type-account .ar-type:last-child p.des:before {
+  left: 85% !important;
+}
+#register .right-register .box-register .type-account .ar-type .box-type {
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #E7EBEF;
+  border-radius: 7px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+#register .right-register .box-register .type-account .ar-type .box-type p.icon-type {
+  margin-bottom: 8px;
+}
+#register .right-register .box-register .type-account .ar-type .box-type p.icon-type svg {
+  height: 33px;
+}
+#register .right-register .box-register .type-account .ar-type .box-type p.icon-type svg path {
+  fill: #AEAEAE;
+}
+#register .right-register .box-register .type-account .ar-type .box-type p.icon-checked {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  margin: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.4;
+}
+#register .right-register .box-register .type-account .ar-type .box-type p.name {
+  font-size: 14px;
+  color: #606060;
+  margin: 0;
+}
+#register .right-register .box-register .type-account .ar-type p.des {
+  margin: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  background: #D4FBDE;
+  border: 1px solid #BBECC8;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 14px;
+  width: 400px;
+}
+#register .right-register .box-register .type-account .ar-type p.des:after, #register .right-register .box-register .type-account .ar-type p.des:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+#register .right-register .box-register .type-account .ar-type p.des:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #D4FBDE;
+  border-width: 8px;
+  margin-left: -10px;
+}
+#register .right-register .box-register .type-account .ar-type p.des:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #BBECC8;
+  border-width: 10px;
+  margin-left: -12px;
+}
+#register .right-register .box-register .agree p label {
+  padding-left: 5px;
+}
+#register .right-register .box-register .agree p label a {
+  text-decoration: underline;
+}
+#register .right-register .box-register .title-register {
+  font-size: 26px;
+  font-family: "Montserrat-SemiBold";
+  margin-bottom: 20px;
+}
+#register .right-register .box-register p.no-account {
+  margin: 30px 0 15px;
+  font-size: 14px;
+}
+#register .right-register .box-register .btn-get-started {
+  margin-top: 15px;
+}
+#register .right-register .box-register dl {
+  margin-bottom: 15px;
+}
+#register .right-register .box-register dl dt {
+  font-size: 14px;
+  font-family: "Montserrat-Medium";
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+#register .right-register .box-register dl dd span.eye {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 15px;
+  cursor: pointer;
+}
+#register .right-register .box-register dl dd input {
+  height: 45px;
+}
+#register .right-register .box-register dl dd input, #register .right-register .box-register dl dd textarea {
+  border: 2px solid #CED4DA;
+  font-size: 14px;
+}
+#register .right-register .box-register dl dd input:focus, #register .right-register .box-register dl dd textarea:focus {
+  border: 2px solid #00A773;
+  outline: none;
+  box-shadow: none;
+}
+#register .right-register .box-register dl dd input::-webkit-input-placeholder, #register .right-register .box-register dl dd textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #c0c7d6;
+}
+#register .right-register .box-register dl dd input::-moz-placeholder, #register .right-register .box-register dl dd textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #c0c7d6;
+}
+#register .right-register .box-register dl dd input:-ms-input-placeholder, #register .right-register .box-register dl dd textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #c0c7d6;
+}
+#register .right-register .box-register dl dd input:-moz-placeholder, #register .right-register .box-register dl dd textarea:-moz-placeholder { /* Firefox 18- */
+  color: #c0c7d6;
+}
+
 /* Large desktops and laptops */
 @media (max-width: 1199px) {
   #login .footer-bottom.container {
@@ -961,6 +1169,15 @@
 }
 /* Large desktops and laptops */
 @media (max-width: 991px) {
+  #register .left-register h2 {
+    font-size: 20px;
+  }
+  #register .left-register p.required {
+    font-size: 16px;
+  }
+  #register .right-register .box-register {
+    margin-left: 10%;
+  }
   #banner .pile-img img {
     width: 100%;
   }
@@ -1319,6 +1536,76 @@
   #login .box-login .title-contact {
     font-size: 6vw;
     margin-bottom: 4vw;
+  }
+  #register .left-register {
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  #register .left-register h2 {
+    font-size: 5vw;
+  }
+  #register .left-register h1.logo {
+    width: 15%;
+    margin: 0 auto 5vw;
+  }
+  #register .left-register p.required {
+    margin: 0vw 0 3vw;
+    font-size: 3.5vw;
+  }
+  #register .left-register p.des {
+    margin: 2vw 0 0;
+  }
+  #register .left-register ul {
+    display: none;
+  }
+  #register .right-register {
+    padding: 0;
+  }
+  #register .right-register .box-register {
+    margin: 7vw auto 12vw;
+    width: 90%;
+  }
+  #register .right-register .box-register dl dt {
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+  }
+  #register .right-register .box-register dl dd input {
+    height: 11vw;
+  }
+  #register .right-register .box-register dl dd textarea, #register .right-register .box-register dl dd input {
+    font-size: 3vw;
+  }
+  #register .right-register .box-register .title-contact {
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+  #register .right-register .box-register p.no-account {
+    margin: 7vw 0 3vw;
+    font-size: 3.5vw;
+  }
+  #register .right-register .box-register .agree {
+    font-size: 3.5vw;
+  }
+  #register .right-register .box-register .title-register {
+    font-size: 5.5vw;
+  }
+  #register .right-register .box-register .type-account {
+    margin-bottom: 20vw;
+  }
+  #register .right-register .box-register .type-account .title-type {
+    font-size: 4vw;
+  }
+  #register .right-register .box-register .type-account .ar-type .box-type {
+    padding: 3vw;
+  }
+  #register .right-register .box-register .type-account .ar-type .box-type p.name {
+    font-size: 3vw;
+  }
+  #register .right-register .box-register .type-account .ar-type p.des {
+    width: 100%;
+    padding: 2vw 3vw;
+    font-size: 3.5vw;
   }
 }
 /* Large desktops and laptops */
