@@ -999,6 +999,10 @@
   width: 400px;
   margin-left: 200px;
 }
+#register .right-register .box-register.my-account {
+  margin-left: 100px;
+  width: 100%;
+}
 #register .right-register .box-register .type-account {
   margin: 25px 0 100px;
   position: relative;
@@ -1122,6 +1126,103 @@
   margin-bottom: 10px;
   font-weight: normal;
 }
+#register .right-register .box-register dl dt span {
+  font-size: 12px;
+  color: #6D7992;
+  padding-left: 10px;
+}
+#register .right-register .box-register dl dd ul.subjects {
+  margin-top: 30px;
+}
+#register .right-register .box-register dl dd ul.subjects li {
+  width: 33%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#register .right-register .box-register dl dd ul.subjects li.see-more {
+  color: #00A773;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#register .right-register .box-register dl dd ul.subjects li input[type=checkbox] {
+  display: none;
+}
+#register .right-register .box-register dl dd ul.subjects li input[type=checkbox]:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 5px;
+  height: 11px;
+  border: solid #096958;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+#register .right-register .box-register dl dd ul.subjects li input[type=checkbox] + label {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#register .right-register .box-register dl dd ul.subjects li input[type=checkbox] + label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #D4DADF;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 3px;
+  background: #fff;
+}
+#register .right-register .box-register dl dd.birthday select {
+  margin-right: 7px;
+}
+#register .right-register .box-register dl dd.birthday select:last-child {
+  margin-right: 0;
+}
+#register .right-register .box-register dl dd.cmnd .ar-cmnd {
+  width: 48%;
+  border: 2px dashed #CED4DA;
+  background-color: #fff;
+  cursor: pointer;
+}
+#register .right-register .box-register dl dd.cmnd .ar-cmnd p.name {
+  margin: 0;
+  font-size: 12px;
+  color: #7a7a7a;
+  padding: 45px 0;
+}
+#register .right-register .box-register dl dd.cmnd .ar-cmnd input[type=file] {
+  display: none;
+}
+#register .right-register .box-register dl dd.avatar {
+  border: 2px dashed #CED4DA;
+  background-color: #fff;
+  cursor: pointer;
+}
+#register .right-register .box-register dl dd.avatar input[type=file] {
+  display: none;
+}
+#register .right-register .box-register dl dd.avatar p.photo-capture {
+  width: 75px;
+  margin: 30px auto;
+}
+#register .right-register .box-register dl dd.avatar .note {
+  padding-bottom: 20px;
+}
+#register .right-register .box-register dl dd.avatar .note p {
+  font-size: 12px;
+  margin: 15px 0 0;
+  color: #7a7a7a;
+}
 #register .right-register .box-register dl dd span.eye {
   top: 50%;
   transform: translateY(-50%);
@@ -1129,29 +1230,98 @@
   width: 15px;
   cursor: pointer;
 }
-#register .right-register .box-register dl dd input {
+#register .right-register .box-register dl dd input, #register .right-register .box-register dl dd select {
   height: 45px;
 }
-#register .right-register .box-register dl dd input, #register .right-register .box-register dl dd textarea {
+#register .right-register .box-register dl dd input, #register .right-register .box-register dl dd textarea, #register .right-register .box-register dl dd select {
   border: 2px solid #CED4DA;
   font-size: 14px;
 }
-#register .right-register .box-register dl dd input:focus, #register .right-register .box-register dl dd textarea:focus {
+#register .right-register .box-register dl dd input:focus, #register .right-register .box-register dl dd textarea:focus, #register .right-register .box-register dl dd select:focus {
   border: 2px solid #00A773;
   outline: none;
   box-shadow: none;
 }
-#register .right-register .box-register dl dd input::-webkit-input-placeholder, #register .right-register .box-register dl dd textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+#register .right-register .box-register dl dd input::-webkit-input-placeholder, #register .right-register .box-register dl dd textarea::-webkit-input-placeholder, #register .right-register .box-register dl dd select::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #c0c7d6;
+  font-family: "Montserrat-Medium";
+  font-weight: normal;
 }
-#register .right-register .box-register dl dd input::-moz-placeholder, #register .right-register .box-register dl dd textarea::-moz-placeholder { /* Firefox 19+ */
+#register .right-register .box-register dl dd input::-moz-placeholder, #register .right-register .box-register dl dd textarea::-moz-placeholder, #register .right-register .box-register dl dd select::-moz-placeholder { /* Firefox 19+ */
   color: #c0c7d6;
+  font-family: "Montserrat-Medium";
+  font-weight: normal;
 }
-#register .right-register .box-register dl dd input:-ms-input-placeholder, #register .right-register .box-register dl dd textarea:-ms-input-placeholder { /* IE 10+ */
+#register .right-register .box-register dl dd input:-ms-input-placeholder, #register .right-register .box-register dl dd textarea:-ms-input-placeholder, #register .right-register .box-register dl dd select:-ms-input-placeholder { /* IE 10+ */
   color: #c0c7d6;
+  font-family: "Montserrat-Medium";
+  font-weight: normal;
 }
-#register .right-register .box-register dl dd input:-moz-placeholder, #register .right-register .box-register dl dd textarea:-moz-placeholder { /* Firefox 18- */
+#register .right-register .box-register dl dd input:-moz-placeholder, #register .right-register .box-register dl dd textarea:-moz-placeholder, #register .right-register .box-register dl dd select:-moz-placeholder { /* Firefox 18- */
   color: #c0c7d6;
+  font-family: "Montserrat-Medium";
+  font-weight: normal;
+}
+#register .right-register .tab-register {
+  text-transform: uppercase;
+  background-color: #E3E8EE;
+  border-radius: 30px;
+  margin: 15px 0 50px;
+}
+#register .right-register .tab-register li {
+  padding: 10px 50px;
+  font-family: "Montserrat-SemiBold";
+  cursor: pointer;
+  font-size: 14px;
+}
+#register .right-register .tab-register li.active {
+  background-color: #00A773;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 15px -2px rgba(0, 167, 115, 0.66);
+  -moz-box-shadow: 0px 5px 15px -2px rgba(0, 167, 115, 0.66);
+  box-shadow: 0px 5px 15px -2px rgba(0, 167, 115, 0.66);
+}
+#register .right-register .infomation-content .left-infomation {
+  width: 300px;
+  margin-right: 60px;
+}
+#register .right-register .infomation-content .right-infomation {
+  width: 520px;
+}
+#register .right-register .infomation-content .right-infomation .cancel {
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #3A3A3A;
+  margin-right: 40px;
+}
+#register .right-register .infomation-content .right-infomation .subjects-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#register .right-register .infomation-content .right-infomation .subjects-popup .ar-sublect-popup {
+  width: 35%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-height: 90%;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+#register .right-register .infomation-content .right-infomation .subjects-popup .ar-sublect-popup .title-popup {
+  font-size: 18px;
+  font-family: "Montserrat-SemiBold";
 }
 
 /* Large desktops and laptops */

@@ -21,6 +21,17 @@ $(document).ready(function() {
         $(this).addClass("active");
     })
 
+    //popup subjects
+    $(".subjects .see-more").click(function() {
+        $(this).parent().next(".subjects-popup").fadeIn();
+    })
+    $(".subjects-popup .cancel-popup").click(function() {
+        console.log(123);
+        $(".subjects-popup").fadeOut();
+    })
+
+    //end popup subjects
+
     //subject section
     $('.owl-subject').owlCarousel({
         loop: true,
