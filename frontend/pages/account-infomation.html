@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Bootstrap Template</title>
-        <meta content="" name="description">
-        <meta content="" name="keywords">
-        <link href="../public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../public/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="../public/lib/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet">
-        <link href="../public/lib/owlcarousel2/css/owl.theme.default.min.css" rel="stylesheet">
-        <link href="../public/css/theme.css" rel="stylesheet">
-        <link href="../public/css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <section id="register">
-            <style>body { background-color: #F3F5F7; }</style>
-            <div class="left-register">
-                <h1 class="logo">
-                    <a href="index.html"><img src="assets/img/home/edupage-logo.svg" alt=""></a>
-                </h1>
-                <h2>Get started now</h2>
-                <p class="required">No credit card required!</p>
-                <p class="des">Use our tools to explore your ideas and make your vision come true. Then share your work easily.</p>
-                <ul class="list-unstyled">
-                    <li><img src="assets/img/contact/check.svg" alt="">Less routine – more creativity</li>
-                    <li><img src="assets/img/contact/check.svg" alt="">Hundreds of thousands saved</li>
-                    <li><img src="assets/img/contact/check.svg" alt="">Scale budgets efficiently</li>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="../public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../public/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../public/lib/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../public/lib/owlcarousel2/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="../public/css/theme.css" rel="stylesheet" />
+    <link href="../public/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section id="register">
+        <style>
+            body {
+                background-color: #f3f5f7;
+            }
+
+        </style>
+        <div class="left-register">
+            <h1 class="logo">
+                <a href="index.html"><img src="assets/img/home/edupage-logo.svg" alt="" /></a>
+            </h1>
+            <h2>Get started now</h2>
+            <p class="required">No credit card required!</p>
+            <p class="des">
+                Use our tools to explore your ideas and make your vision come true.
+                Then share your work easily.
+            </p>
+            <ul class="list-unstyled">
+                <li>
+                    <img src="assets/img/contact/check.svg" alt="" />Less routine – more
+                    creativity
+                </li>
+                <li>
+                    <img src="assets/img/contact/check.svg" alt="" />Hundreds of
+                    thousands saved
+                </li>
+                <li>
+                    <img src="assets/img/contact/check.svg" alt="" />Scale budgets
+                    efficiently
+                </li>
+            </ul>
+        </div>
+        <div class="right-register right-my-account">
+            <div class="box-register my-account">
+                <div class="title-register">Thông tin tài khoản</div>
+                <ul class="tab-register d-inline-flex align-items-center list-unstyled">
+                    <li class="active" role="infomation">Thông tin</li>
+                    <li role="experience">Kinh nghiệm</li>
                 </ul>
-            </div>
-            <div class="right-register">
-                <div class="box-register my-account">
-                    <div class="title-register">Thông tin tài khoản</div>
-                    <ul class="tab-register d-inline-flex align-items-center list-unstyled">
-                        <li class="active" role="infomation">Thông tin</li>
-                        <li role="experience">Kinh nghiệm</li>
-                    </ul>
-                    <form class="infomation-content d-md-flex" action="">
-                        <div class="left-infomation">
-                            <!-- <div class="ar-info">
+                <form class="infomation-content" action="">
+                    <div class="tab-register-content">
+                        <div class="d-md-flex">
+                            <div class="left-infomation">
                                 <dl>
                                     <dt>Ảnh cá nhân <span>Bắt buộc</span></dt>
                                     <dd class="text-center avatar">
-                                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-                                        <p class="photo-capture"><img src="assets/img/contact/photo-capture-icon.svg" alt=""></p>
+                                        <input type="file" class="require" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+                                        <p class="photo-capture">
+                                            <img src="assets/img/contact/photo-capture-icon.svg" alt="" />
+                                        </p>
                                         <div class="note">
-                                            <p>Kích thước ảnh trên <br>“808x632px”</p>
+                                            <p>Kích thước ảnh trên <br />“808x632px”</p>
                                             <p>Không sử dụng ảnh GIF</p>
                                         </div>
                                     </dd>
@@ -54,36 +76,24 @@
                                     <dt>Ảnh CMND <span>Bắt buộc</span></dt>
                                     <dd class="cmnd text-center d-flex align-items-center justify-content-between">
                                         <div class="ar-cmnd">
-                                            <input type="file" id="front-cmnd" name="front_cmnd" accept="image/png, image/jpeg">
+                                            <input type="file" class="require" id="front-cmnd" name="front_cmnd"
+                                                accept="image/png, image/jpeg" />
                                             <p class="name">Trước</p>
                                         </div>
                                         <div class="ar-cmnd">
-                                            <input type="file" id="back-cmnd" name="back_cmnd" accept="image/png, image/jpeg">
+                                            <input type="file" class="require" id="back-cmnd" name="back_cmnd"
+                                                accept="image/png, image/jpeg" />
                                             <p class="name">Sau</p>
                                         </div>
                                     </dd>
                                 </dl>
-                            </div> -->
-                            <div class="ar-info">
-                                <dl>
-                                    <dt>Bằng cấp <span>Bắt buộc</span></dt>
-                                    <dd class="text-center avatar">
-                                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-                                        <p class="photo-capture"><img src="assets/img/contact/student-boy-icon.svg" alt=""></p>
-                                        <div class="note">
-                                            <p>Kích thước ảnh trên <br>“808x632px”</p>
-                                            <p>Không sử dụng ảnh GIF</p>
-                                        </div>
-                                    </dd>
-                                </dl>
                             </div>
-                        </div>
-                        <div class="right-infomation">
-                            <!-- <div class="ar-info">
+                            <div class="right-infomation">
                                 <dl>
                                     <dt>Họ và tên <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <input type="text" required class="form-control" placeholder="Họ và tên" aria-label="Họ và tên" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control require" placeholder="Họ và tên"
+                                            aria-label="Họ và tên" aria-describedby="basic-addon1" />
                                     </dd>
                                 </dl>
                                 <dl>
@@ -103,7 +113,7 @@
                                 <dl>
                                     <dt>Giới tính <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <select class="form-select" name="sex" aria-label="">
+                                        <select class="form-select require" name="sex" aria-label="">
                                             <option selected>Giới tính</option>
                                         </select>
                                     </dd>
@@ -111,176 +121,230 @@
                                 <dl>
                                     <dt>Địa chỉ <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <input type="text" required class="form-control" placeholder="Địa chỉ" aria-label="Địa chỉ" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control require" placeholder="Địa chỉ"
+                                            aria-label="Địa chỉ" aria-describedby="basic-addon1" />
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Điện thoại</dt>
                                     <dd>
-                                        <input type="text" required class="form-control" placeholder="Điện thoại" aria-label="Điện thoại" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" placeholder="Điện thoại"
+                                            aria-label="Điện thoại" aria-describedby="basic-addon1" />
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Email đã đăng ký</dt>
                                     <dd>
-                                        <input type="text" required class="form-control" readonly placeholder="Email đã đăng ký" aria-label="Email đã đăng ký" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" readonly value="edupage@gmail.com"
+                                            placeholder="Email đã đăng ký" aria-label="Email đã đăng ký"
+                                            aria-describedby="basic-addon1" />
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Giới thiệu bản thân <span>500 ký tự</span></dt>
                                     <dd>
-                                        <textarea class="form-control" required id="about" rows="4" placeholder="Ưu điểm (Giới thiệu bản thân)"></textarea>
+                                        <textarea class="form-control" id="about" rows="4"
+                                            placeholder="Ưu điểm (Giới thiệu bản thân)"></textarea>
                                     </dd>
                                 </dl>
-                            </div> -->
-
-                            <div class="ar-info">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-register-content">
+                        <div class="d-md-flex">
+                            <div class="left-infomation">
+                                <dl>
+                                    <dt>Bằng cấp <span>Bắt buộc</span></dt>
+                                    <dd class="text-center avatar">
+                                        <input type="file" class="require" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+                                        <p class="photo-capture">
+                                            <img src="assets/img/contact/student-boy-icon.svg" alt="" />
+                                        </p>
+                                        <div class="note">
+                                            <p>Kích thước ảnh trên <br />“808x632px”</p>
+                                            <p>Không sử dụng ảnh GIF</p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="right-infomation">
                                 <dl>
                                     <dt>Học vị <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <input type="text" required class="form-control" name="degree" placeholder="Học vị" aria-label="Học vị" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control require" name="degree"
+                                            placeholder="Học vị" aria-label="Học vị" aria-describedby="basic-addon1" />
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Chuyên ngành học</dt>
                                     <dd>
-                                        <input type="text" required class="form-control" name="major" placeholder="Chuyên ngành học" aria-label="Chuyên ngành học" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" name="major"
+                                            placeholder="Chuyên ngành học" aria-label="Chuyên ngành học"
+                                            aria-describedby="basic-addon1" />
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Kinh nghiệm giảng dạy <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <select class="form-select" name="exp" aria-label="">
-                                            <option selected>Kinh nghiệm giảng dạy</option>
+                                        <select class="form-select require" name="exp" aria-label="">
+                                            <option value="">Kinh nghiệm giảng dạy</option>
+                                            <option value="10 năm">10 năm</option>
                                         </select>
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Lớp dạy <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <select class="form-select" name="class" aria-label="">
-                                            <option selected>Lớp dạy</option>
+                                        <select class="form-select require" name="class" aria-label="">
+                                            <option value="">Lớp dạy</option>
+                                            <option value="Toán">Toán</option>
                                         </select>
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Khu vực dạy <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <select class="form-select" name="area" aria-label="">
-                                            <option selected>Khu vực dạy</option>
+                                        <select class="form-select require" name="area" aria-label="">
+                                            <option value="">Khu vực dạy</option>
+                                            <option value="TP.HCM">TP.HCM</option>
                                         </select>
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>Môn dạy <span>Bắc buộc</span></dt>
                                     <dd>
-                                        <ul class="list-unstyled subjects d-flex align-items-center justify-content-between flex-wrap">
+                                        <div class="require-subjects alert alert-danger" role="alert">
+                                            Vui lòng chọn môn dạy!
+                                        </div>
+                                        <ul
+                                            class="list-unstyled subjects d-flex align-items-center justify-content-start flex-wrap">
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject01">
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject01" />
                                                 <label for="subject01">Toán</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject02">
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject02" />
                                                 <label for="subject02">Ngữ văn</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject03">
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject03" />
                                                 <label for="subject03">Tiếng Việt</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject04">
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject04" />
                                                 <label for="subject04">Tiếng anh</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject05">
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject05" />
                                                 <label for="subject05">Sinh học</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject06">
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject06" />
                                                 <label for="subject06">Ôn thi đại học</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject07">
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject07" />
                                                 <label for="subject07">Tiếng nhật</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="subject[]" id="subject08">
-                                                <label for="subject08">Tiếng trung</label>
+                                                <input type="checkbox" value="test" class="require" name="subject[]" id="subject08" />
+                                                <label for="subject08">Tiếng nhật</label>
                                             </li>
                                             <li class="see-more">Xem thêm</li>
                                         </ul>
+                                        <!-- POPUP SUBJECT -->
                                         <div class="subjects-popup">
                                             <div class="ar-sublect-popup">
                                                 <div class="title-popup">Môn dạy</div>
-                                                <ul class="list-unstyled subjects d-flex align-items-center justify-content-between flex-wrap">
+                                                <ul
+                                                    class="list-unstyled subjects d-flex align-items-center justify-content-start flex-wrap">
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject01">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject01" />
                                                         <label for="subject01">Toán</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject02">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject02" />
                                                         <label for="subject02">Ngữ văn</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject03">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject03" />
                                                         <label for="subject03">Tiếng Việt</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject04">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject04" />
                                                         <label for="subject04">Tiếng anh</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject05">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject05" />
                                                         <label for="subject05">Sinh học</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject06">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject06" />
                                                         <label for="subject06">Ôn thi đại học</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject07">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject07" />
                                                         <label for="subject07">Tiếng nhật</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject08">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject08" />
                                                         <label for="subject08">Tiếng trung</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject08">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject08" />
                                                         <label for="subject08">Tiếng trung</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject08">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject08" />
                                                         <label for="subject08">Tiếng trung</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="subject[]" id="subject08">
+                                                        <input type="checkbox" value="test" name="subject[]" id="subject08" />
                                                         <label for="subject08">Tiếng trung</label>
                                                     </li>
                                                 </ul>
-                                                <div class="submit-button d-flex align-items-center justify-content-end mt-4">
-                                                    <button type="button" class="cancel cancel-popup">Cancel</button>
-                                                    <button type="button" class="btn-get-started mt-0">Done →</button>
+                                                <div
+                                                    class="submit-button d-flex align-items-center justify-content-end mt-4">
+                                                    <button type="button" class="cancel cancel-popup">
+                                                        Cancel
+                                                    </button>
+                                                    <button type="button" class="btn-get-started mt-0 done-popup">
+                                                        Done →
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- end POPUP SUBJECT -->
                                     </dd>
                                 </dl>
                             </div>
-                            <div class="submit-button d-flex align-items-center justify-content-end mt-4">
-                                <button type="button" class="cancel">Hủy</button>
-                                <button type="button" class="btn-get-started mt-0">Next →</button>
-                                <button type="button" class="btn-get-started mt-0">Hoàn thành →</button>
-                            </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="thanks-message text-center" id="text-message">
+                        <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4" />
+                        <h3>Bạn đã cập nhật thông tin thành công</h3>
+                        <span>Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi, hãy <a href="./">khám phá ngay!</a></span>
+                    </div>
+                    <div style="overflow: auto" id="nextprevious">
+                        <div class="submit-button d-flex align-items-center justify-content-end mt-4">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="cancel">
+                                Quay lại
+                            </button>
+                            <button type="button" id="nextBtn" class="btn-get-started mt-0" onclick="nextPrev(1)">
+                                Tiếp theo →
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </section>
-        <script src="../public/lib/jquery/jquery.min.js"></script>
-        <script src="../public/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../public/lib/owlcarousel2/js/owl.carousel.min.js"></script>
-        <script src="../public/js/theme.js"></script>
-        <script src="../public/js/main.js"></script>
-    </body>
+        </div>
+
+    </section>
+    <script src="../public/lib/jquery/jquery.min.js"></script>
+    <script src="../public/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/lib/owlcarousel2/js/owl.carousel.min.js"></script>
+    <script src="../public/js/theme.js"></script>
+    <script src="../public/js/main.js"></script>
+</body>
+
 </html>

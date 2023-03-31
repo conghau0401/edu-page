@@ -9,14 +9,12 @@ $(document).ready(function() {
         $('#player').attr('src', `${video}`)
     }
 
+    //connect tab
     $(".ar-content .connect-content:first").show();
     $(".tab-connect li").click(function() {
         $(".ar-content .connect-content").hide();
         const id = $(this).attr("role");
-        console.log(id);
         $("#" + id).fadeIn('fast');
-
-
         $(".tab-connect li").removeClass("active");
         $(this).addClass("active");
     })
@@ -25,12 +23,9 @@ $(document).ready(function() {
     $(".subjects .see-more").click(function() {
         $(this).parent().next(".subjects-popup").fadeIn();
     })
-    $(".subjects-popup .cancel-popup").click(function() {
-        console.log(123);
+    $(".subjects-popup .cancel-popup, .subjects-popup .done-popup").click(function() {
         $(".subjects-popup").fadeOut();
     })
-
-    //end popup subjects
 
     //subject section
     $('.owl-subject').owlCarousel({
@@ -127,5 +122,75 @@ $(document).ready(function() {
         const type = $(this).attr("role");
         $("input#type-account").val(type);
     })
-
+    $("dd.avatar, .ar-cmnd").click(function() {
+        $(this).children("input[type='file']")[0].click();
+    })
+    //END Register
 })
+
+//--- TAB REGISTER
+if ($(".right-my-account").length) {
+    var currentTab = 0;
+    document.addEventListener("DOMContentLoaded", function(event) {
+        showTab(currentTab);
+    });
+    function showTab(n) {
+        var x = document.getElementsByClassName("tab-register-content");
+        x[n].style.display = "block";
+        if (n == 0) {
+            document.getElementById("prevBtn").style.display = "none";
+        } else {
+            document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (n == (x.length - 1)) {
+            document.getElementById("nextBtn").innerHTML = "Hoàn thành →";
+            $(".tab-register li").removeClass("active");
+            $(".tab-register li:last").addClass("active");
+        } else {
+            document.getElementById("nextBtn").innerHTML = "Tiếp theo →";
+            $(".tab-register li").removeClass("active");
+            $(".tab-register li:first").addClass("active");
+        }
+    }
+    function nextPrev(n) {
+        var x = document.getElementsByClassName("tab-register-content");
+        if (n == 1 && !validateForm()) return false;
+        x[currentTab].style.display = "none";
+        currentTab = currentTab + n;
+        if (currentTab >= x.length) {
+
+            // $("form").submit();
+            document.getElementById("nextprevious").style.display = "none";
+            document.getElementById("text-message").style.display = "block";
+        }
+        showTab(currentTab);
+    }
+    function validateForm() {
+        var x, y, i, valid = true;
+        x = document.getElementsByClassName("tab-register-content");
+        y = x[currentTab].getElementsByClassName("require");
+
+        if (currentTab > 0) {
+            const subject = $('input[name="subject[]"]:checked');
+            if (subject.length == 0) {
+                $(".require-subjects").show();
+               valid = false;
+            } else {
+                $(".require-subjects").hide();
+                valid = true;
+            }
+        }
+        for (i = 0; i < y.length; i++) {
+            if (y[i].value == "") {
+                if (!y[i].classList.contains('invalid')) {
+                    y[i].className += " invalid";
+                }
+                valid = false;
+            } else {
+                y[i].classList.remove("invalid");
+            }
+        }
+        return valid;
+    }
+}
+//---END TAB REGISTER
