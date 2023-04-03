@@ -10,6 +10,156 @@
   font-family: "Montserrat-Bold";
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
 }
+#list-find-turtor .banner-list {
+  background-color: #096958;
+  text-align: center;
+  color: #fff;
+}
+#list-find-turtor .banner-list .container {
+  max-width: 1170px;
+  position: relative;
+  padding-top: 230px;
+  padding-bottom: 300px;
+}
+#list-find-turtor .banner-list h2 {
+  font-size: 60px;
+  font-family: "Montserrat-Bold";
+  line-height: 70px;
+}
+#list-find-turtor .banner-list p.des {
+  font-size: 22px;
+  margin-top: 20px;
+}
+#list-find-turtor .banner-list p.icon span {
+  position: absolute;
+}
+#list-find-turtor .banner-list p.icon span.dots {
+  width: 180px;
+  top: 8%;
+  left: 15%;
+}
+#list-find-turtor .banner-list p.icon span.wave {
+  width: 100px;
+  top: 8%;
+  right: -50px;
+}
+#list-find-turtor .banner-list p.icon span.icon-white {
+  width: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+}
+#list-find-turtor .banner-list p.icon span.icon-green {
+  width: 100px;
+  bottom: 10%;
+  left: -50px;
+}
+#list-find-turtor .content-list {
+  margin-top: -150px;
+  position: relative;
+  z-index: 1;
+}
+#list-find-turtor .content-list .container {
+  max-width: 1000px;
+}
+#list-find-turtor .ar-list {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+}
+#list-find-turtor .ar-list:hover .btn-get-started {
+  background-color: #fff;
+  border: 2px solid #00A773;
+  color: #00A773;
+  box-shadow: none;
+}
+#list-find-turtor .ar-list .user p.img {
+  width: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#list-find-turtor .ar-list .user p.img img {
+  width: 100%;
+  height: auto;
+}
+#list-find-turtor .ar-list .user p.name {
+  font-size: 16px;
+  font-family: "Montserrat-SemiBold";
+}
+#list-find-turtor .ar-list .user p.name span {
+  text-transform: capitalize;
+  display: block;
+  font-size: 12px;
+  color: #7B7E83;
+  font-family: "Montserrat-Medium";
+}
+#list-find-turtor .ar-list .btn-get-started-border {
+  display: inherit;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+#list-find-turtor .ar-list p.des {
+  font-size: 14px;
+}
+#list-find-turtor .ar-list p.des a {
+  color: #00A773;
+  text-decoration: underline;
+  padding-left: 5px;
+}
+#list-find-turtor .ar-list p.id {
+  font-size: 12px;
+}
+#list-find-turtor .ar-list p.id span {
+  font-family: "Montserrat-SemiBold";
+}
+#list-find-turtor .ar-list p.price {
+  color: #7B7E83;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#list-find-turtor .ar-list p.price span {
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  color: #0F232D;
+  display: block;
+}
+#list-find-turtor .ar-list p.wish-list {
+  font-size: 14px;
+  font-family: "Montserrat-Medium";
+  margin-top: 20px;
+  cursor: pointer;
+  display: table;
+}
+#list-find-turtor .ar-list p.wish-list.active svg path {
+  fill: red;
+}
+#list-find-turtor .ar-list p.wish-list svg {
+  width: 15px;
+  margin-right: 7px;
+}
+#list-find-turtor .ar-list dl dt {
+  font-size: 12px;
+  color: #7B7E83;
+  margin-bottom: 5px;
+}
+#list-find-turtor .ar-list dl dd {
+  font-size: 13px;
+  padding-left: 12px;
+  margin: 0;
+}
+#list-find-turtor .ar-list dl dd:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  left: 0;
+  top: 7px;
+}
+
 #banner {
   padding: 80px 0;
   background-color: #f2f2f2;
@@ -500,6 +650,8 @@
 }
 #connect .ar-connect p.des a {
   color: #00A773;
+  display: block;
+  text-decoration: underline;
 }
 #connect .ar-connect p.id {
   font-size: 12px;
@@ -667,8 +819,23 @@
   top: 13px;
 }
 
+.footer-list {
+  padding-top: 20px;
+}
+.footer-list #contact {
+  background-color: #eee;
+}
+.footer-list #contact ul {
+  padding: 70px 0 40px;
+}
+
 #contact {
   background-color: #F2F2F2;
+}
+#contact .text-list p.title-list {
+  font-size: 36px;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 25px;
 }
 #contact .contact-banner {
   background: url("../../pages/assets/img/home/banner-bg.svg") no-repeat;
@@ -1547,8 +1714,8 @@
     white-space: nowrap;
   }
   .btn-get-started-border, .btn-get-started {
-    font-size: 4vw;
-    padding: 3vw 3vw;
+    font-size: 3.5vw;
+    padding: 2.5vw 6vw;
   }
   #connect {
     padding: 10vw 0;
@@ -1665,6 +1832,9 @@
   #faq .content-faq dl dd {
     font-size: 3.5vw;
     padding-top: 4vw;
+  }
+  #contact .text-list p.title-list {
+    font-size: 4vw;
   }
   #contact .contact-banner {
     background-size: cover;
@@ -1958,6 +2128,72 @@
     width: 100%;
     padding: 2vw 3vw;
     font-size: 3.5vw;
+  }
+  #list-find-turtor .banner-list .container {
+    padding-top: 10vw;
+    padding-bottom: 25vw;
+  }
+  #list-find-turtor .banner-list h2 {
+    font-size: 6vw;
+    line-height: 8vw;
+    position: relative;
+    z-index: 1;
+  }
+  #list-find-turtor .banner-list p.des {
+    font-size: 3.5vw;
+  }
+  #list-find-turtor .banner-list p.icon span.dots {
+    width: 10%;
+    top: 5%;
+    left: 5%;
+  }
+  #list-find-turtor .banner-list p.icon span.wave {
+    width: 5%;
+    top: 8%;
+    right: 5%;
+  }
+  #list-find-turtor .banner-list p.icon span.icon-white {
+    width: 7%;
+    top: auto;
+    transform: inherit;
+    left: auto;
+    right: 5%;
+    bottom: 27%;
+  }
+  #list-find-turtor .banner-list p.icon span.icon-green {
+    width: 7%;
+    right: auto;
+    transform: inherit;
+    left: auto;
+    left: 5%;
+    bottom: 27%;
+  }
+  #list-find-turtor .content-list {
+    margin-top: -15vw;
+  }
+  #list-find-turtor .ar-list {
+    margin-bottom: 15px !important;
+  }
+  #list-find-turtor .ar-list .btn-get-started {
+    margin-bottom: 0 !important;
+  }
+  #list-find-turtor .ar-list p.price {
+    margin-top: 5vw !important;
+  }
+  #list-find-turtor .ar-list p.price span {
+    font-size: 4.5vw;
+    margin-top: 2vw;
+  }
+  #list-find-turtor .ar-list p.wish-list {
+    display: inline-block;
+    padding-left: 4vw;
+    font-size: 3.5vw;
+  }
+  .footer-list {
+    padding-top: 5vw;
+  }
+  .footer-list #contact ul {
+    padding: 4vw 0 0;
   }
 }
 /* your CSS goes here*/

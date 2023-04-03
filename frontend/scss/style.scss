@@ -11,6 +11,174 @@
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
+#list-find-turtor {
+  .banner-list {
+    background-color: #096958;
+    text-align: center;
+    color: #fff;
+    .container {
+      max-width: 1170px;
+      position: relative;
+      padding-top: 230px;
+      padding-bottom: 300px;
+    }
+    h2 {
+      font-size: 60px;
+      font-family: "Montserrat-Bold";
+      line-height: 70px;
+    }
+    p.des {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+    p.icon {
+      span {
+        position: absolute;
+        &.dots {
+          width: 180px;
+          top: 8%;
+          left: 15%;
+        }
+        &.wave {
+          width: 100px;
+          top: 8%;
+          right: -50px;
+        }
+        &.icon-white {
+          width: 100px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 100%;
+        }
+        &.icon-green {
+          width: 100px;
+          bottom: 10%;
+          left: -50px;
+        }
+      }
+    }
+  }
+  .content-list {
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+    .container {
+      max-width: 1000px;
+    }
+  }
+  .ar-list {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+    &:hover {
+      .btn-get-started {
+        background-color: #fff;
+        border: 2px solid #00A773;
+        color: #00A773;
+        box-shadow: none;
+      }
+    }
+    .user {
+      p {
+        &.img {
+          width: 65px;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        &.name {
+          font-size: 16px;
+          font-family: "Montserrat-SemiBold";
+          span {
+            text-transform: capitalize;
+            display: block;
+            font-size: 12px;
+            color: #7B7E83;
+            font-family: "Montserrat-Medium";
+          }
+        }
+      }
+    }
+    .btn-get-started-border {
+      display: inherit;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    p {
+      &.des {
+        font-size: 14px;
+        a {
+          color: #00A773;
+          text-decoration: underline;
+          padding-left: 5px;
+        }
+      }
+      &.id {
+        font-size: 12px;
+        span {
+          font-family: "Montserrat-SemiBold";
+        }
+      }
+      &.price {
+        color: #7B7E83;
+        text-transform: uppercase;
+        font-size: 12px;
+        span {
+          font-family: "Montserrat-Bold";
+          font-size: 22px;
+          color: #0F232D;
+          display: block;
+        }
+      }
+      &.wish-list {
+        font-size: 14px;
+        font-family: "Montserrat-Medium";
+        margin-top: 20px;
+        cursor: pointer;
+        display: table;
+        &.active {
+          svg {
+            path {
+              fill: red;
+            }
+          }
+        }
+        svg {
+          width: 15px;
+          margin-right: 7px;
+        }
+      }
+    }
+    dl {
+      dt {
+        font-size: 12px;
+        color: #7B7E83;
+        margin-bottom: 5px;
+      }
+      dd {
+        font-size: 13px;
+        padding-left: 12px;
+        margin: 0;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 5px;
+          height: 5px;
+          background-color: #000;
+          border-radius: 50%;
+          left: 0;
+          top: 7px;
+        }
+      }
+    }
+  }
+}
+
 #banner {
   padding: 80px 0;
   background-color: #f2f2f2;
@@ -513,6 +681,8 @@
         font-size: 14px;
         a {
           color: #00A773;
+          display: block;
+          text-decoration: underline;
         }
       }
       &.id {
@@ -696,9 +866,24 @@
   }
 }
 
-
+.footer-list {
+  padding-top: 20px;
+  #contact {
+    background-color: #eee;
+    ul {
+      padding: 70px 0 40px;
+    }
+  }
+}
 #contact {
   background-color: #F2F2F2;
+  .text-list {
+    p.title-list {
+      font-size: 36px;
+      font-family: "Montserrat-Bold";
+      margin-bottom: 25px;
+    }
+  }
   .contact-banner {
     background: url("../../pages/assets/img/home/banner-bg.svg") no-repeat;
     background-size: 100% 100%;
@@ -1689,8 +1874,8 @@
     }
   }
   .btn-get-started-border, .btn-get-started {
-    font-size: 4vw;
-    padding: 3vw 3vw;
+    font-size: 3.5vw;
+    padding: 2.5vw 6vw;
   }
   #connect {
     padding: 10vw 0;
@@ -1824,6 +2009,11 @@
     }
   }
   #contact {
+    .text-list {
+      p.title-list {
+        font-size: 4vw;
+      }
+    }
     .contact-banner {
       background-size: cover;
       padding: 6vw;
@@ -2153,6 +2343,82 @@
             }
           }
         }
+      }
+    }
+  }
+  #list-find-turtor {
+    .banner-list {
+      .container {
+        padding-top: 10vw;
+        padding-bottom: 25vw;
+      }
+      h2 {
+        font-size: 6vw;
+        line-height: 8vw;
+        position: relative;
+        z-index: 1;
+      }
+      p.des {
+        font-size: 3.5vw;
+      }
+      p.icon {
+        span {
+          &.dots {
+            width: 10%;
+            top: 5%;
+            left: 5%;
+          }
+          &.wave {
+            width: 5%;
+            top: 8%;
+            right: 5%;
+          }
+          &.icon-white {
+            width: 7%;
+            top: auto;
+            transform: inherit;
+            left: auto;
+            right: 5%;
+            bottom: 27%;
+          }
+          &.icon-green {
+            width: 7%;
+            right: auto;
+            transform: inherit;
+            left: auto;
+            left: 5%;
+            bottom: 27%;
+          }
+        }
+      }
+    }
+    .content-list {
+      margin-top: -15vw;
+    }
+    .ar-list {
+      margin-bottom: 15px !important;
+      .btn-get-started {
+        margin-bottom: 0 !important;
+      }
+      p.price {
+        margin-top: 5vw !important;
+        span {
+          font-size: 4.5vw;
+          margin-top: 2vw;
+        }
+      }
+      p.wish-list {
+        display: inline-block;
+        padding-left: 4vw;
+        font-size: 3.5vw;
+      }
+    }
+  }
+  .footer-list {
+    padding-top: 5vw;
+    #contact {
+      ul {
+        padding: 4vw 0 0;
       }
     }
   }
