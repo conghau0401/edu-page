@@ -1009,6 +1009,12 @@
   width: 100%;
   margin-left: 0;
 }
+#register .right-register .box-register.find-tutor {
+  width: 520px;
+}
+#register .right-register .box-register.find-tutor button.btn-get-started {
+  font-size: 18px;
+}
 #register .right-register .box-register .type-account {
   margin: 25px 0 100px;
   position: relative;
@@ -1143,6 +1149,76 @@
   margin-bottom: 0;
   display: none;
 }
+#register .right-register .box-register dl dd.teach-type p {
+  margin-left: 30px;
+}
+#register .right-register .box-register dl dd.teach-type p:first-child {
+  margin-left: 0;
+}
+#register .right-register .box-register dl dd.price {
+  font-size: 25px;
+  color: #0CBA46;
+}
+#register .right-register .box-register dl dd.price span.month {
+  font-size: 18px;
+}
+#register .right-register .box-register dl dd.time {
+  position: relative;
+}
+#register .right-register .box-register dl dd.time:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #CED4DA;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#register .right-register .box-register dl dd.time select {
+  width: 48%;
+  position: relative;
+  z-index: 1;
+}
+#register .right-register .box-register dl dd input[type=radio] {
+  display: none;
+}
+#register .right-register .box-register dl dd input[type=radio]:checked + label {
+  border-color: #00A773;
+}
+#register .right-register .box-register dl dd input[type=radio]:checked + label:after {
+  transform: translateY(-50%) scale(0.55);
+}
+#register .right-register .box-register dl dd input[type=radio] + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+}
+#register .right-register .box-register dl dd input[type=radio] + label:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #D4DADF;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: border-color 400ms ease;
+}
+#register .right-register .box-register dl dd input[type=radio] + label:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #00A773;
+  border: 2px solid #00A773;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scale(0);
+  transition: transform 400ms ease;
+}
 #register .right-register .box-register dl dd ul.subjects {
   margin-top: 30px;
 }
@@ -1256,34 +1332,37 @@
 #register .right-register .box-register dl dd input, #register .right-register .box-register dl dd select {
   height: 45px;
 }
+#register .right-register .box-register dl dd .select2-selection {
+  min-height: 45px;
+}
 #register .right-register .box-register dl dd input:read-only {
   background-color: #F2F2F2;
 }
-#register .right-register .box-register dl dd input, #register .right-register .box-register dl dd textarea, #register .right-register .box-register dl dd select {
+#register .right-register .box-register dl dd input, #register .right-register .box-register dl dd textarea, #register .right-register .box-register dl dd select, #register .right-register .box-register dl dd .select2-selection {
   border: 2px solid #CED4DA;
   font-size: 14px;
 }
-#register .right-register .box-register dl dd input:focus, #register .right-register .box-register dl dd textarea:focus, #register .right-register .box-register dl dd select:focus {
+#register .right-register .box-register dl dd input:focus, #register .right-register .box-register dl dd textarea:focus, #register .right-register .box-register dl dd select:focus, #register .right-register .box-register dl dd .select2-selection:focus {
   border: 2px solid #00A773;
   outline: none;
   box-shadow: none;
 }
-#register .right-register .box-register dl dd input::-webkit-input-placeholder, #register .right-register .box-register dl dd textarea::-webkit-input-placeholder, #register .right-register .box-register dl dd select::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+#register .right-register .box-register dl dd input::-webkit-input-placeholder, #register .right-register .box-register dl dd textarea::-webkit-input-placeholder, #register .right-register .box-register dl dd select::-webkit-input-placeholder, #register .right-register .box-register dl dd .select2-selection::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #c0c7d6;
   font-family: "Montserrat-Medium";
   font-weight: normal;
 }
-#register .right-register .box-register dl dd input::-moz-placeholder, #register .right-register .box-register dl dd textarea::-moz-placeholder, #register .right-register .box-register dl dd select::-moz-placeholder { /* Firefox 19+ */
+#register .right-register .box-register dl dd input::-moz-placeholder, #register .right-register .box-register dl dd textarea::-moz-placeholder, #register .right-register .box-register dl dd select::-moz-placeholder, #register .right-register .box-register dl dd .select2-selection::-moz-placeholder { /* Firefox 19+ */
   color: #c0c7d6;
   font-family: "Montserrat-Medium";
   font-weight: normal;
 }
-#register .right-register .box-register dl dd input:-ms-input-placeholder, #register .right-register .box-register dl dd textarea:-ms-input-placeholder, #register .right-register .box-register dl dd select:-ms-input-placeholder { /* IE 10+ */
+#register .right-register .box-register dl dd input:-ms-input-placeholder, #register .right-register .box-register dl dd textarea:-ms-input-placeholder, #register .right-register .box-register dl dd select:-ms-input-placeholder, #register .right-register .box-register dl dd .select2-selection:-ms-input-placeholder { /* IE 10+ */
   color: #c0c7d6;
   font-family: "Montserrat-Medium";
   font-weight: normal;
 }
-#register .right-register .box-register dl dd input:-moz-placeholder, #register .right-register .box-register dl dd textarea:-moz-placeholder, #register .right-register .box-register dl dd select:-moz-placeholder { /* Firefox 18- */
+#register .right-register .box-register dl dd input:-moz-placeholder, #register .right-register .box-register dl dd textarea:-moz-placeholder, #register .right-register .box-register dl dd select:-moz-placeholder, #register .right-register .box-register dl dd .select2-selection:-moz-placeholder { /* Firefox 18- */
   color: #c0c7d6;
   font-family: "Montserrat-Medium";
   font-weight: normal;
@@ -1326,7 +1405,7 @@
 #register .right-register .infomation-content .right-infomation {
   width: 520px;
 }
-#register .right-register .infomation-content .right-infomation .subjects-popup {
+#register .right-register .infomation-content .subjects-popup {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1334,8 +1413,9 @@
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 10;
 }
-#register .right-register .infomation-content .right-infomation .subjects-popup .ar-sublect-popup {
+#register .right-register .infomation-content .subjects-popup .ar-sublect-popup {
   width: 35%;
   margin: 0 auto;
   background-color: #fff;
@@ -1349,7 +1429,7 @@
   left: 0;
   right: 0;
 }
-#register .right-register .infomation-content .right-infomation .subjects-popup .ar-sublect-popup .title-popup {
+#register .right-register .infomation-content .subjects-popup .ar-sublect-popup .title-popup {
   font-size: 18px;
   font-family: "Montserrat-SemiBold";
 }
@@ -1789,16 +1869,16 @@
   #register .right-register .infomation-content .right-infomation {
     width: 100%;
   }
-  #register .right-register .infomation-content .right-infomation .subjects-popup .ar-sublect-popup {
-    width: 92%;
-    padding: 5vw;
-  }
-  #register .right-register .infomation-content .right-infomation .subjects-popup .ar-sublect-popup .title-popup {
-    font-size: 4.5vw;
-  }
   #register .right-register .infomation-content .cancel {
     font-size: 3.5vw;
     margin-right: 5vw;
+  }
+  #register .right-register .infomation-content .subjects-popup .ar-sublect-popup {
+    width: 92%;
+    padding: 5vw;
+  }
+  #register .right-register .infomation-content .subjects-popup .ar-sublect-popup .title-popup {
+    font-size: 4.5vw;
   }
   #register .right-register.right-my-account {
     width: 100%;
@@ -1811,6 +1891,14 @@
     padding-left: 0;
     width: 90%;
     margin: 7vw auto 12vw;
+  }
+  #register .right-register .box-register.find-tutor {
+    padding-left: 0;
+    width: 90%;
+    margin: 7vw auto 12vw;
+  }
+  #register .right-register .box-register.find-tutor button.btn-get-started {
+    font-size: 3.5vw;
   }
   #register .right-register .box-register dl dt {
     font-size: 3.5vw;
@@ -1834,7 +1922,7 @@
   #register .right-register .box-register dl dd.cmnd p.name {
     padding: 10vw 0;
   }
-  #register .right-register .box-register dl dd input, #register .right-register .box-register dl dd select {
+  #register .right-register .box-register dl dd input, #register .right-register .box-register dl dd select, #register .right-register .box-register dl dd .select2-selection {
     height: 11vw;
   }
   #register .right-register .box-register dl dd textarea, #register .right-register .box-register dl dd input, #register .right-register .box-register dl dd select {
