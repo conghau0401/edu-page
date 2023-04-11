@@ -10,6 +10,231 @@
   font-family: "Montserrat-Bold";
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
 }
+#news .top-news {
+  background: url(../../pages/assets/img/contact/bg-news.png) no-repeat;
+  background-size: cover;
+  padding: 20px 0 100px;
+  color: #fff;
+}
+#news .top-news .breadcrumb {
+  margin: 0;
+}
+#news .top-news .breadcrumb ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+#news .top-news .breadcrumb ul li {
+  font-size: 14px;
+  position: relative;
+  padding-right: 7px;
+  margin-right: 15px;
+}
+#news .top-news .breadcrumb ul li a {
+  color: #fff;
+}
+#news .top-news .breadcrumb ul li:last-child:after {
+  display: none;
+}
+#news .top-news .breadcrumb ul li:after {
+  position: absolute;
+  content: ">";
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+}
+#news .top-news h2 {
+  font-size: 20px;
+  font-family: "Montserrat-SemiBold";
+  text-transform: uppercase;
+  margin: 100px 0 30px;
+}
+#news .top-news p.des {
+  font-size: 35px;
+  width: 50%;
+  line-height: 45px;
+}
+#news .into-container {
+  width: 90%;
+  margin: 0 auto;
+}
+#news .content-news {
+  padding-bottom: 100px;
+}
+#news .content-news .details {
+  padding: 50px 0;
+  font-size: 16px;
+  color: #3B3B3B;
+  padding-right: 40px;
+}
+#news .content-news .right-news {
+  margin-top: -120px;
+  position: relative;
+  z-index: 1;
+}
+#news .content-news .right-news .info {
+  background: #fff;
+  padding: 50px 30px;
+  margin-bottom: 30px;
+}
+#news .content-news .right-news .info p.tell {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#about #contact {
+  padding: 40px 0;
+}
+#about #contact ul {
+  margin-bottom: 0;
+}
+#about .partner {
+  padding-bottom: 30px;
+}
+#about h3 {
+  font-size: 40px;
+  font-family: "Montserrat-SemiBold";
+  margin-bottom: 40px;
+}
+#about .top-about {
+  overflow: hidden;
+  padding: 100px 0 150px;
+  position: relative;
+}
+#about .top-about:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: url(../../pages/assets/img/contact/about_banner.svg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 58%;
+}
+#about .top-about:before {
+  position: absolute;
+  content: "";
+  left: 65%;
+  bottom: 0;
+  background: url(../../pages/assets/img/contact/icon-green.svg) no-repeat;
+  background-size: 100% 100%;
+  height: 85px;
+  width: 90px;
+}
+#about .content-about {
+  background-color: #2D9D7A;
+  padding: 60px 50px;
+  width: 50%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+#about .content-about h2 {
+  font-size: 30px;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 30px;
+}
+#about .content-about p.des {
+  font-size: 14px;
+  line-height: 25px;
+  font-family: "Montserrat-Medium";
+  margin: 0;
+}
+#about .ad-about {
+  padding: 70px 0;
+}
+#about .ad-about .box-ad {
+  background-color: #fff;
+  padding: 30px 30px;
+}
+#about .ad-about .box-ad h4 {
+  font-size: 24px;
+  font-family: "Montserrat-SemiBold";
+}
+#about .ad-about .box-ad p.des {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 30px 0 40px;
+}
+#about .ad-about .box-ad ul {
+  margin: 0;
+  padding: 0;
+}
+#about .ad-about .box-ad ul li {
+  list-style: none;
+  font-size: 14px;
+  padding-left: 33px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#about .ad-about .box-ad ul li:after {
+  position: absolute;
+  content: "";
+  background: url(../../pages/assets/img/contact/about_check.svg) no-repeat;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  top: 0;
+}
+#about .midde-content {
+  background-color: #fff;
+}
+#about .midde-content dl {
+  padding: 40px 0;
+  text-align: center;
+  margin: 0;
+}
+#about .midde-content dl dt {
+  font-size: 40px;
+  font-family: "Montserrat-SemiBold";
+}
+#about .midde-content dl dd {
+  color: #5E6C73;
+  font-size: 16px;
+  margin: 0;
+}
+#about .talented-team {
+  padding: 70px 0;
+}
+#about .talented-team .ar-talented {
+  text-align: center;
+  font-family: "Montserrat-Medium";
+}
+#about .talented-team .ar-talented p.name {
+  font-size: 20px;
+  margin: 15px 0;
+}
+#about .talented-team .ar-talented p.job {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #5E6C73;
+}
+#about .talented-team .ar-talented p.des {
+  font-size: 12px;
+  color: #5E6C73;
+}
+#about .grow-about {
+  padding: 100px 0;
+  background: url(../../pages/assets/img/contact/about_bg_bottom.svg) no-repeat;
+  background-size: cover;
+  font-family: "Montserrat-SemiBold";
+}
+#about .grow-about p {
+  margin: 0;
+}
+#about .grow-about p.work {
+  font-size: 20px;
+}
+#about .grow-about p.slogan {
+  font-size: 50px;
+  width: 40%;
+  margin: 30px 0 40px;
+  line-height: 55px;
+}
+
 #list-find-turtor .banner-list {
   background-color: #096958;
   text-align: center;
@@ -1662,6 +1887,112 @@
 }
 /* Large desktops and laptops */
 @media (max-width: 767px) {
+  #news .content-news {
+    padding-bottom: 30px;
+  }
+  #news .content-news .details {
+    padding: 30px 0 0;
+    padding-right: 0;
+    font-size: 14px;
+  }
+  #news .content-news .right-news {
+    margin-top: 20px;
+    padding: 0;
+  }
+  #news .top-news {
+    padding: 40px 0;
+  }
+  #news .top-news .breadcrumb {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #news .top-news .breadcrumb ul {
+    padding: 0;
+  }
+  #news .top-news h2 {
+    font-size: 15px;
+    margin: 20px 0 20px;
+  }
+  #news .top-news p.des {
+    font-size: 14px;
+    width: 100%;
+    line-height: 30px;
+    margin: 0;
+  }
+  #about .grow-about {
+    padding: 40px 0;
+  }
+  #about .grow-about p.slogan {
+    font-size: 25px;
+    width: 100%;
+    margin: 20px 0 30px;
+    line-height: 32px;
+  }
+  #about .talented-team {
+    padding: 30px 0;
+  }
+  #about .talented-team .ar-talented {
+    margin-bottom: 15px;
+  }
+  #about .talented-team .ar-talented p.name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  #about .talented-team .ar-talented p.job {
+    margin-bottom: 10px;
+  }
+  #about .midde-content dl {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  #about .midde-content dl dt {
+    font-size: 25px;
+  }
+  #about .midde-content dl dd {
+    font-size: 14px;
+  }
+  #about h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  #about .ad-about {
+    padding: 30px 0 0;
+  }
+  #about .ad-about .box-ad {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  #about .ad-about .box-ad ul li {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  #about .ad-about .box-ad h4 {
+    font-size: 18px;
+  }
+  #about .ad-about .box-ad p.des {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 15px 0 25px;
+  }
+  #about .content-about {
+    width: 100%;
+    padding: 30px 25px;
+  }
+  #about .content-about h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  #about .content-about p.des {
+    font-size: 13px;
+    line-height: 23px;
+  }
+  #about .top-about {
+    padding: 25px 0 70px;
+  }
+  #about .top-about:before {
+    height: 35px;
+    width: 40px;
+  }
   #header {
     padding: 4vw 0;
   }

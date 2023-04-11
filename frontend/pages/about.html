@@ -3,147 +3,249 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Bootstrap About Template</title>
+        <title>Bootstrap Template</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <link href="../public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../public/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="../public/lib/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="../public/lib/owlcarousel2/css/owl.theme.default.min.css" rel="stylesheet">
         <link href="../public/css/theme.css" rel="stylesheet">
         <link href="../public/css/style.css" rel="stylesheet">
     </head>
     <body>
         <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top">
-            <div class="container d-flex align-items-center justify-content-between">
-                <h1 class="logo"><a href="index.html">OnePage</a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <header id="header" class="position-relative">
+            <div class="header-container d-flex align-items-center justify-content-between">
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a class="nav-link scrollto active" href="/pages/index.html">Home</a></li>
-                        <li><a class="nav-link scrollto" href="/pages/about.html">About</a></li>
-                        <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                        <li><a class="nav-link scrollto o" href="#portfolio">Portfolio</a></li>
-                        <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                        <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+                        <li><a class="nav-link scrollto" href="/pages/index.html">Giới thiệu</a></li>
                         <li class="dropdown">
-                            <a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                            <a href="#"><span>Phụ huynh</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                <li class="dropdown">
-                                    <a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
+                                <li><a href="#">Đăng ký</a></li>
+                                <li><a href="#">Đăng tìm gia sư</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                        <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                        <li class="dropdown">
+                            <a href="#"><span>Gia sư</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#">Đăng ký</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#contact">Lớp mới mở</a></li>
+                        <li><a class="nav-link scrollto" href="#contact">Liên hệ</a></li>
+
+                        <li class="mobile"><a class="nav-link scrollto" href="/pages/index.html">
+                            <img src="assets/img/home/FAQs.svg" class="faqs" /> Hỏi đáp</a>
+                        </li>
+                        <li class="mobile"><a class="nav-link scrollto" href="#contact">Đăng nhập</a></li>
+                        <li class="mobile btn"><a class="getstarted scrollto" href="#about">Đăng ký</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <h1 class="logo"><a href="index.html"><img src="assets/img/home/edupage-logo.svg" alt=""></a></h1>
+                <nav class="navbar desktop">
+                    <ul>
+                        <li><a class="nav-link scrollto" href="/pages/index.html">
+                            <img src="assets/img/home/FAQs.svg" class="faqs" /> Hỏi đáp</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#contact">Đăng nhập</a></li>
+                        <li><a class="getstarted scrollto" href="#about">Đăng ký</a></li>
+                    </ul>
                 </nav>
                 <!-- .navbar -->
             </div>
         </header>
         <!-- End Header -->
-        <main id="main">
-            <!-- ======= About Section ======= -->
-            <section id="about" class="about">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-title">
-                        <h2>About Us</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. </p>
-                    </div>
-                    <div class="row content">
-                        <div class="col-lg-6">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.
-                            </p>
-                            <ul>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6 pt-4 pt-lg-0">
-                            <p>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <a href="#" class="btn-learn-more">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End About Section -->
-        </main>
-        <!-- ======= Footer ======= -->
-        <footer id="footer">
-            <div class="footer-top">
+        <section id="about">
+            <div class="top-about">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h3>OnePage</h3>
-                            <p>
-                                A108 Adam Street <br>
-                                New York, NY 535022<br>
-                                United States <br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                    <div class="d-flex justify-content-end">
+                        <div class="content-about">
+                            <h2>Giới thiệu</h2>
+                            <p class="des">
+                                Edupage là nền tảng giáo dục công nghệ tiên tiến, được ra đời nhằm mục đích kết nối Gia sư và Học sinh tạo cho việc học ngày một hiệu quả hơn. Đội ngũ gia sư có kinh nghiệm chuyên môn giảng dạy, kỹ năng giao tiếp tốt, được chọn lọc một cách bài bản. Đến với Edupage phụ huynh sẽ tiếp cận được đội ngũ gia sư chuyên nghiệp có trình độ chuyên môn cao, đa dạng lớp học từ bậc học cho đến môn học. Đội ngũ gia sư được Edupage kiểm tra năng lực và chuyên môn theo từng cấp bậc dạy giúp phụ huynh tiết kiệm thời gian nhưng vẫn đảm bảo được chất lượng giảng dạy. 
                             </p>
-                        </div>
-                        <div class="col-lg-2 col-md-6 footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Our Services</h4>
-                            <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-6 footer-newsletter">
-                            <h4>Join Our Newsletter</h4>
-                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                            <form action="" method="post">
-                                <input type="email" name="email"><input type="submit" value="Subscribe">
-                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container d-md-flex py-4">
-                <div class="me-md-auto text-center text-md-start">
-                    <div class="copyright">
-                        &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+            <div class="container">
+                <div class="ad-about">
+                    <h3>Lợi thế khi sử dụng</h3>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="box-ad">
+                                <h4>Phụ huynh sẽ được</h4>
+                                <p class="des">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                                <ul>
+                                    <li>Hỗ trợ 24/7 các vấn đề gặp phải</li>
+                                    <li>Tìm kiếm gia sư nhanh chóng theo từng cấp bậc</li>
+                                    <li>Đội ngũ gia sư đã được kiểm tra/xét duyệt năng lực chuyên môn</li>
+                                    <li>Theo dõi lộ trình học và phát triển của học viên</li>
+                                    <li>Thời gian linh hoạt, và tiết kiệm chi phí</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="box-ad">
+                                <h4>Phụ huynh sẽ được</h4>
+                                <p class="des">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                                <ul>
+                                    <li>Hỗ trợ 24/7 các vấn đề gặp phải</li>
+                                    <li>Tìm kiếm gia sư nhanh chóng theo từng cấp bậc</li>
+                                    <li>Đội ngũ gia sư đã được kiểm tra/xét duyệt năng lực chuyên môn</li>
+                                    <li>Theo dõi lộ trình học và phát triển của học viên</li>
+                                    <li>Thời gian linh hoạt, và tiết kiệm chi phí</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <div class="midde-content">
+                    <img src="assets/img/contact/about_midde_bg.svg" class="" />
+                    <div class="row">
+                        <dl class="col-md-3 col-6">
+                            <dt>30,295</dt>
+                            <dd>Users Created</dd>
+                        </dl>
+                        <dl class="col-md-3 col-6">
+                            <dt>4,628</dt>
+                            <dd>Business Activated</dd>
+                        </dl>
+                        <dl class="col-md-3 col-6">
+                            <dt>27,546</dt>
+                            <dd>Reports Sent</dd>
+                        </dl>
+                        <dl class="col-md-3 col-6">
+                            <dt>70 M+</dt>
+                            <dd>Dollars Transferred</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="talented-team">
+                    <h3>Talented Team</h3>
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="ar-talented">
+                                <p class="img"><img src="assets/img/contact/about_talent.svg" class="" /></p>
+                                <p class="name">Bailey Wonger</p>
+                                <p class="job">Digital marketer</p>
+                                <p class="des">Why I say old chap that is spiffing tickety-boo amongst, brolly bugger say William in my flat Elizabeth tosser. Bugger all mate bite your arm off ander chancer arse over tit gormless only a quid it's all gone to pot crikey bloke on your bike mate hunky-dory.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="ar-talented">
+                                <p class="img"><img src="assets/img/contact/about_talent.svg" class="" /></p>
+                                <p class="name">Bailey Wonger</p>
+                                <p class="job">Digital marketer</p>
+                                <p class="des">Why I say old chap that is spiffing tickety-boo amongst, brolly bugger say William in my flat Elizabeth tosser. Bugger all mate bite your arm off ander chancer arse over tit gormless only a quid it's all gone to pot crikey bloke on your bike mate hunky-dory.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="ar-talented">
+                                <p class="img"><img src="assets/img/contact/about_talent.svg" class="" /></p>
+                                <p class="name">Bailey Wonger</p>
+                                <p class="job">Digital marketer</p>
+                                <p class="des">Why I say old chap that is spiffing tickety-boo amongst, brolly bugger say William in my flat Elizabeth tosser. Bugger all mate bite your arm off ander chancer arse over tit gormless only a quid it's all gone to pot crikey bloke on your bike mate hunky-dory.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner">
+                    <h3 class="text-center">You’re in good company</h3>
+                    <div class="owl-clients owl-carousel owl-theme">
+                        <div class="text-center">
+                            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grow-about">
+                <div class="container">
+                    <p class="work">Work with us</p>
+                    <p class="slogan">Grow your business with instant results</p>
+                    <a href="#" class="btn-get-started text-center">Work with Us</a>
+                </div>
+            </div>
+            <section id="contact">
+                <div class="container">
+                    <ul class="list-unstyled d-md-flex align-items-center justify-content-center">
+                        <li class="text-center">
+                            <img src="assets/img/home/call-icon.svg" alt="">
+                            <span>Need Help support</span>
+                        </li>
+                        <li class="text-center">
+                            <img src="assets/img/home/chat-icon.svg" alt="">
+                            <span>Need Help support</span>
+                        </li>
+                        <li class="text-center">
+                            <img src="assets/img/home/help-icon.svg" alt="">
+                            <span>Need Email support</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="container">
+                <div class="owl-clients owl-carousel owl-theme">
+                    <div class="text-center">
+                        <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <h2 class="footer-title text-center">Hãy đến với EduPage cộng đồng gia sư chất lượng nhất</h2>
+                <p class="des text-center">
+                    Bạn cần tìm gia sư ? hãy Đăng Ký để tiếp cần với hàng nghìn gia sư trên toàn quốc.
+                    <br>Bạn muốn trở thành gia sư? Hãy Đăng Ký bây giờ để tiếp cận nhanh chóng với học viên.
+                </p>
+                <p class="letsgo text-center mb-0">Let's Go! <img src="assets/img/home/arow.svg" alt=""></p>
+                <p class="text-center">
+                    <a href="#about" class="btn-get-started text-center">Đăng ký miễn phí &#8594;</a>
+                </p>
+                <div class="footer-bottom d-md-flex justify-content-between align-items-center">
+                    <p class="copyright">
+                        Copyright 2023 © eweup.com. All rights reserved.
+                    </p>
+                    <p class="weup">
+                        <img src="assets/img/home/eweup.logo.svg" alt="">
+                    </p>
+                    <ul class="m-0 d-flex list-unstyled">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
@@ -152,6 +254,7 @@
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
         <script src="../public/lib/jquery/jquery.min.js"></script>
         <script src="../public/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../public/lib/owlcarousel2/js/owl.carousel.min.js"></script>
         <script src="../public/js/theme.js"></script>
         <script src="../public/js/main.js"></script>
     </body>
