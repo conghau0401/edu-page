@@ -159,7 +159,7 @@ if ($(".right-my-account").length) {
         currentTab = currentTab + n;
         if (currentTab >= x.length) {
 
-            // $("form").submit();
+            $("form").submit();
             document.getElementById("nextprevious").style.display = "none";
             document.getElementById("text-message").style.display = "block";
         }
